@@ -1,0 +1,313 @@
+{% extends 'base.html' %}
+
+{%block body%}
+    <div id="homenav" class="anchor-target"></div>
+    <div id="home">
+        <div class="container-fluid all-bracket">
+            <h1>NCAA 2018 Bracket</h1>
+            <div class="bracket-wrapper bracket-player">
+                <div class="bracket-scroller">
+                    <div class="bracket">
+                        <div class="bracket-column bracket-column-matches">
+                            <div class="bracket-head">
+                                <div class="bracket-header">Round of 64</div>
+                            </div>
+                            {% for team1,team2 in team_names1 %}
+                            <div class="bracket-game">
+                                <div class="icon" style="margin-top: 30px; right: 16px;"></div>
+                                <div class="bracket-cell-r1">
+                                    <div class="bracket-player-top">
+                                        &nbsp;
+                                        <span style="vertical-align: -1px">{{ team1 }}</span>
+                                        <div class="bracket-score" style="width:21px">0</div>
+                                    </div>
+                                </div>
+                                <div class="bracket-popup-wrapper bracket-popup-player">
+
+                                </div>
+                                <div class="bracket-cell-r1">
+                                    <div class="bracket-player-bottom">
+                                        &nbsp;
+                                        <span style="vertical-align: -1px">{{ team2 }}</span>
+                                        <div class="bracket-score" style="width:21px">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="bracket-column" style="width:20px">
+                            <div class="top-spacer"></div>
+                            {% for count in spacer_1 %}
+                                <div class="spacer">
+                                    <div class="spacer-left">
+                                        <div class="left-top-space"> </div>
+                                        <div class="left-top-angle-space"> </div>
+                                        <div class="left-space"> </div>
+                                        <div class="left-bottom-angle-space"> </div>
+                                        <div class="left-bottom-space"> </div>
+                                    </div>
+                                    <div class="spacer-right">
+                                        <div class="right-top-space"> </div>
+                                        <div class="right-top-angle-space"> </div>
+                                        <div class="right-space"> </div>
+                                        <div class="right-bottom-angle-space"> </div>
+                                        <div class="right-bottom-space"> </div>
+                                    </div>
+                                </div>
+
+                            {% endfor %}
+                        </div>
+                        <div class="bracket-column bracket-column-matches">
+                            <div class="bracket-head">
+                                <div class="bracket-header">Round of 32</div>
+                            </div>
+                            {% for team1,team2 in team_names2 %}
+                                <div class="bracket-game">
+                                    <div class="icon" style="margin-top: 30px; right: 16px;"></div>
+                                    <div class="bracket-cell-r2">
+                                        <div class="bracket-player-top">
+                                            &nbsp;
+                                            <span style="vertical-align: -1px">{{ team1 }}</span>
+                                            <div class="bracket-score" style="width:21px">0</div>
+                                        </div>
+                                    </div>
+                                    <div class="bracket-popup-wrapper bracket-popup-player">
+
+                                    </div>
+                                    <div class="bracket-cell-r2">
+                                        <div class="bracket-player-bottom">
+                                            &nbsp;
+                                            <span style="vertical-align: -1px">{{ team2 }}</span>
+                                            <div class="bracket-score" style="width:21px">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="bracket-column" style="width:20px">
+                            <div class="top-spacer"></div>
+                            {% for count in spacer_2 %}
+                                <div class="spacer">
+                                    <div class="spacer-left">
+                                        <div class="left-top-space2"> </div>
+                                        <div class="left-top-angle-space2"> </div>
+                                        <div class="left-space2"> </div>
+                                        <div class="left-bottom-angle-space2"> </div>
+                                        <div class="left-bottom-space2"> </div>
+                                    </div>
+                                    <div class="spacer-right">
+                                        <div class="right-top-space2"> </div>
+                                        <div class="right-top-angle-space2"> </div>
+                                        <div class="right-space2"> </div>
+                                        <div class="right-bottom-angle-space2"> </div>
+                                        <div class="right-bottom-space2"> </div>
+                                    </div>
+                                </div>
+
+                            {% endfor %}
+                        </div>
+                        <div class="bracket-column bracket-column-matches">
+                            <div class="bracket-head">
+                                <div class="bracket-header">Round of 16</div>
+                            </div>
+                            {% for team1,team2 in team_names3 %}
+                                <div class="bracket-game">
+                                    <div class="icon" style="margin-top: 30px; right: 16px;"></div>
+                                    <div class="bracket-cell-r3">
+                                        <div class="bracket-player-top">
+                                            &nbsp;
+                                            <span style="vertical-align: -1px">{{ team1 }}</span>
+                                            <div class="bracket-score" style="width:21px">0</div>
+                                        </div>
+                                    </div>
+                                    <div class="bracket-popup-wrapper bracket-popup-player">
+
+                                    </div>
+                                    <div class="bracket-cell-r3">
+                                        <div class="bracket-player-bottom">
+                                            &nbsp;
+                                            <span style="vertical-align: -1px">{{ team2 }}</span>
+                                            <div class="bracket-score" style="width:21px">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="bracket-column" style="width:20px">
+                            <div class="top-spacer"></div>
+                            {% for count in spacer_3 %}
+                                <div class="spacer">
+                                    <div class="spacer-left">
+                                        <div class="left-top-space3"> </div>
+                                        <div class="left-top-angle-space3"> </div>
+                                        <div class="left-space3"> </div>
+                                        <div class="left-bottom-angle-space3"> </div>
+                                        <div class="left-bottom-space3"> </div>
+                                    </div>
+                                    <div class="spacer-right">
+                                        <div class="right-top-space3"> </div>
+                                        <div class="right-top-angle-space3"> </div>
+                                        <div class="right-space3"> </div>
+                                        <div class="right-bottom-angle-space3"> </div>
+                                        <div class="right-bottom-space3"> </div>
+                                    </div>
+                                </div>
+
+                            {% endfor %}
+                        </div>
+                        <div class="bracket-column bracket-column-matches">
+                            <div class="bracket-head">
+                                <div class="bracket-header">Round of 8</div>
+                            </div>
+                            {% for team1,team2 in team_names4 %}
+                                <div class="bracket-game">
+                                    <div class="icon" style="margin-top: 30px; right: 16px;"></div>
+                                    <div class="bracket-cell-r4">
+                                        <div class="bracket-player-top">
+                                            &nbsp;
+                                            <span style="vertical-align: -1px">{{ team1 }}</span>
+                                            <div class="bracket-score" style="width:21px">0</div>
+                                        </div>
+                                    </div>
+                                    <div class="bracket-popup-wrapper bracket-popup-player">
+
+                                    </div>
+                                    <div class="bracket-cell-r4">
+                                        <div class="bracket-player-bottom">
+                                            &nbsp;
+                                            <span style="vertical-align: -1px">{{ team2 }}</span>
+                                            <div class="bracket-score" style="width:21px">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="bracket-column" style="width:20px">
+                            <div class="top-spacer"></div>
+                            {% for count in spacer_4 %}
+                                <div class="spacer">
+                                    <div class="spacer-left">
+                                        <div class="left-top-space4"> </div>
+                                        <div class="left-top-angle-space4"> </div>
+                                        <div class="left-space4"> </div>
+                                        <div class="left-bottom-angle-space4"> </div>
+                                        <div class="left-bottom-space4"> </div>
+                                    </div>
+                                    <div class="spacer-right">
+                                        <div class="right-top-space4"> </div>
+                                        <div class="right-top-angle-space4"> </div>
+                                        <div class="right-space4"> </div>
+                                        <div class="right-bottom-angle-space4"> </div>
+                                        <div class="right-bottom-space4"> </div>
+                                    </div>
+                                </div>
+
+                            {% endfor %}
+                        </div>
+                        <div class="bracket-column bracket-column-matches">
+                            <div class="bracket-head">
+                                <div class="bracket-header">Round of 4</div>
+                            </div>
+                            {% for team1,team2 in team_names5 %}
+                                <div class="bracket-game">
+                                    <div class="icon" style="margin-top: 30px; right: 16px;"></div>
+                                    <div class="bracket-cell-r5">
+                                        <div class="bracket-player-top">
+                                            &nbsp;
+                                            <span style="vertical-align: -1px">{{ team1 }}</span>
+                                            <div class="bracket-score" style="width:21px">0</div>
+                                        </div>
+                                    </div>
+                                    <div class="bracket-popup-wrapper bracket-popup-player">
+
+                                    </div>
+                                    <div class="bracket-cell-r5">
+                                        <div class="bracket-player-bottom">
+                                            &nbsp;
+                                            <span style="vertical-align: -1px">{{ team2 }}</span>
+                                            <div class="bracket-score" style="width:21px">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="bracket-column" style="width:20px">
+                            <div class="top-spacer"></div>
+                            <div class="spacer">
+                                <div class="spacer-left">
+                                    <div class="left-top-space5"> </div>
+                                    <div class="left-top-angle-space5"> </div>
+                                    <div class="left-space5"> </div>
+                                    <div class="left-bottom-angle-space5"> </div>
+                                    <div class="left-bottom-space5"> </div>
+                                </div>
+                                <div class="spacer-right">
+                                    <div class="right-top-space5"> </div>
+                                    <div class="right-top-angle-space5"> </div>
+                                    <div class="right-space5"> </div>
+                                    <div class="right-bottom-angle-space5"> </div>
+                                    <div class="right-bottom-space5"> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bracket-column bracket-column-matches">
+                            <div class="bracket-head">
+                                <div class="bracket-header">Round of 2</div>
+                            </div>
+                            {% for team1,team2 in team_names6 %}
+                                <div class="bracket-game">
+                                    <div class="icon" style="margin-top: 30px; right: 16px;"></div>
+                                    <div class="bracket-cell-r6">
+                                        <div class="bracket-player-top">
+                                            &nbsp;
+                                            <span style="vertical-align: -1px">{{ team1 }}</span>
+                                            <div class="bracket-score" style="width:21px">0</div>
+                                        </div>
+                                    </div>
+                                    <div class="bracket-popup-wrapper bracket-popup-player">
+
+                                    </div>
+                                    <div class="bracket-cell-r6">
+                                        <div class="bracket-player-bottom">
+                                            &nbsp;
+                                            <span style="vertical-align: -1px">{{ team2 }}</span>
+                                            <div class="bracket-score" style="width:21px">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <div class="bracket-column" style="width:20px">
+                            <div class="top-spacer"></div>
+                            <div class="spacer">
+                                <div class="spacer-6"></div>
+                                <div class="right-bottom-space5"> </div>
+                            </div>
+                            <div class="spacer-left"></div>
+                            <div class="spacer-right"></div>
+                        </div>
+                        <div class="bracket-column bracket-column-matches">
+                            <div class="bracket-head">
+                                <div class="bracket-header">Round of 1</div>
+                            </div>
+                            {% for team1 in team_names7 %}
+                                <div class="bracket-game">
+                                    <div class="icon" style="margin-top: 30px; right: 16px;"></div>
+                                    <div class="bracket-cell-r7">
+                                        <div class="bracket-player-top">
+                                            &nbsp;
+                                            <span style="vertical-align: -1px">{{ team1 }}</span>
+                                            <div class="bracket-score" style="width:21px">0</div>
+                                        </div>
+                                    </div>
+                                    <div class="bracket-popup-wrapper bracket-popup-player">
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{%endblock%}
